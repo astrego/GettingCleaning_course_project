@@ -82,10 +82,12 @@ merge <- function() {
 The function "tidy" creates a second, independent tidy data set with the average 
 of each variable for each activity and each subject. It uses the output from the 
 "merge" function as its input. The output is a text (.txt) file with the tidy 
-dataset. It also return the first 20 rows of the tidy dataset#
+dataset. It also return the first 20 rows of the tidy dataset.
+
+		# uses the output from the "merge" function as its input #
 
 tidy <- function() {
-		# uses the output from the "merge" function as its input #
+		
         
         data <- merge()
         
