@@ -1,22 +1,22 @@
 GettingCleaning_course_project
 ==============================
 
-#The repo for the Getting and Cleaning Data course project #
+The repo for the Getting and Cleaning Data course project 
 
-# The run_analysis.R script has two functions: "merge" and "tidy". #
+The run_analysis.R script has two functions: "merge" and "tidy". 
 
-# For this script to work, you need to put the unzipped original folder from #
-#"https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip"
-# in your working directory. #
+For this script to work, you need to put the unzipped original folder from 
+"https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip"
+in your working directory. 
 
-# The script uses the reshape2 library, you need to install this package if you don't #
-# have it already #
+The script uses the reshape2 library, you need to install this package if you don't 
+have it already 
 
 library(reshape2) 
 
-# The function "merge" reads in the data from the "UCI HAR Dataset" folder. Merges the #
-# data. Subset the variables with the mean and the standard deviation. #
-# Makes the variables more readable for humans.  
+The function "merge" reads in the data from the "UCI HAR Dataset" folder. Merges the 
+data. Subset the variables with the mean and the standard deviation. 
+Makes the variables more readable for humans.  
 
 merge <- function() {
         
@@ -79,9 +79,9 @@ merge <- function() {
        
 }
 
-# The function "tidy" creates a second, independent tidy data set with the average #
-# of each variable for each activity and each subject. It uses the output from the #
-# "merge" function as its input. The output is a text (.txt) file with the tidy 
+The function "tidy" creates a second, independent tidy data set with the average 
+of each variable for each activity and each subject. It uses the output from the 
+"merge" function as its input. The output is a text (.txt) file with the tidy 
 dataset. It also return the first 20 rows of the tidy dataset#
 
 tidy <- function() {
