@@ -3,5 +3,76 @@ Data dictionary Course Project
 When you run the script and use the function "merge" than you get a data table with the 
 name "DTmergeXYSub".
 
-It consists the following variables:
+I used for the names of the variables CamelCase because I think this makes names more
+readable.
 
+It consists the following 68 variables:
+    Name variable							Description							Values
+1:  Subject
+2:  Activity
+3:  TriaxialBodyAccelerationMeanValueX
+4:  TriaxialBodyAccelerationMeanValueY
+5:  TriaxialBodyAccelerationMeanValueZ
+6:  TriaxialBodyAccelerationStandardDeviationX
+7:  TriaxialBodyAccelerationStandardDeviationY
+8:  TriaxialBodyAccelerationStandardDeviationZ
+9:  TriaxialGravityAccelerationMeanValueX
+10: TriaxialGravityAccelerationMeanValueY
+11: TriaxialGravityAccelerationMeanValueZ
+12: TriaxialGravityAccelerationStandardDeviationX
+13: TriaxialGravityAccelerationStandardDeviationY
+14: TriaxialGravityAccelerationStandardDeviationZ
+15: TriaxialBodyAccelerationJerkMeanValueX
+16: TriaxialBodyAccelerationJerkMeanValueY
+17: TriaxialBodyAccelerationJerkMeanValueZ
+18: TriaxialBodyAccelerationJerkStandardDeviationX
+19: TriaxialBodyAccelerationJerkStandardDeviationY
+20: TriaxialBodyAccelerationJerkStandardDeviationZ
+21: TriaxialBodyGyroscopeMeanValueX
+22: TriaxialBodyGyroscopeMeanValueY
+23: TriaxialBodyGyroscopeMeanValueZ
+24: TriaxialBodyGyroscopeStandardDeviationX
+25: TriaxialBodyGyroscopeStandardDeviationY
+26: TriaxialBodyGyroscopeStandardDeviationZ
+27: TriaxialBodyGyroscopeJerkMeanValueX
+28: TriaxialBodyGyroscopeJerkMeanValueY
+29: TriaxialBodyGyroscopeJerkMeanValueZ
+30: TriaxialBodyGyroscopeJerkStandardDeviationX
+31: TriaxialBodyGyroscopeJerkStandardDeviationY
+32: TriaxialBodyGyroscopeJerkStandardDeviationZ
+33: TriaxialBodyAccelerationMagnitudeMeanValue
+34: TriaxialBodyAccelerationMagnitudeStandardDeviation
+35: TriaxialGravityAccelerationMagnitudeMeanValue
+36: TriaxialGravityAccelerationMagnitudeStandardDeviation
+37: TriaxialBodyAccelerationJerkMagnitudeMeanValue
+38: TriaxialBodyAccelerationJerkMagnitudeStandardDeviation
+39: TriaxialBodyGyroscopeMagnitudeMeanValue
+40: TriaxialBodyGyroscopeMagnitudeStandardDeviation
+41: TriaxialBodyGyroscopeJerkMagnitudeMeanValue
+42: TriaxialBodyGyroscopeJerkMagnitudeStandardDeviation
+43: FrequencyBodyAccelerationMeanValueX
+44: FrequencyBodyAccelerationMeanValueY
+45: FrequencyBodyAccelerationMeanValueZ
+46: FrequencyBodyAccelerationStandardDeviationX
+47: FrequencyBodyAccelerationStandardDeviationY
+48: FrequencyBodyAccelerationStandardDeviationZ
+49: FrequencyBodyAccelerationJerkMeanValueX
+50: FrequencyBodyAccelerationJerkMeanValueY
+51: FrequencyBodyAccelerationJerkMeanValueZ
+52: FrequencyBodyAccelerationJerkStandardDeviationX
+53: FrequencyBodyAccelerationJerkStandardDeviationY
+54: FrequencyBodyAccelerationJerkStandardDeviationZ
+55: FrequencyBodyGyroscopeMeanValueX
+56: FrequencyBodyGyroscopeMeanValueY
+57: FrequencyBodyGyroscopeMeanValueZ
+58: FrequencyBodyGyroscopeStandardDeviationX
+59: FrequencyBodyGyroscopeStandardDeviationY
+60: FrequencyBodyGyroscopeStandardDeviationZ
+61: FrequencyBodyAccelerationMagnitudeMeanValue
+62: FrequencyBodyAccelerationMagnitudeStandardDeviation
+63: FrequencyBodyBodyAccelerationJerkMagnitudeMeanValue
+64: FrequencyBodyBodyAccelerationJerkMagnitudeStandardDeviation
+65: FrequencyBodyBodyGyroscopeMagnitudeMeanValue
+66: FrequencyBodyBodyGyroscopeMagnitudeStandardDeviation
+67: FrequencyBodyBodyGyroscopeJerkMagnitudeMeanValue
+68: FrequencyBodyBodyGyroscopeJerkMagnitudeStandardDeviation

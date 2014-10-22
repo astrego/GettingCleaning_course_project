@@ -42,6 +42,8 @@ merge <- function() {
         names(DTmergeXYSub) <- gsub("Acc","Acceleration", names(DTmergeXYSub))
         names(DTmergeXYSub) <- gsub("mean","MeanValue", names(DTmergeXYSub))
         names(DTmergeXYSub) <- gsub("[()]","", names(DTmergeXYSub))
+        names(DTmergeXYSub) <- gsub("tGravity","TriaxialGravity", names(DTmergeXYSub))
+        
         
             
         return(DTmergeXYSub)

@@ -72,7 +72,7 @@ merge <- function() {
         names(DTmergeXYSub) <- gsub("Gyro","Gyroscope", names(DTmergeXYSub))
         names(DTmergeXYSub) <- gsub("Acc","Acceleration", names(DTmergeXYSub))
         names(DTmergeXYSub) <- gsub("mean","MeanValue", names(DTmergeXYSub))
-        
+        names(DTmergeXYSub) <- gsub("[()]","", names(DTmergeXYSub))
             
         return(DTmergeXYSub)
         
