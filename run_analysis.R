@@ -4,9 +4,10 @@
 # "https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip"
 # in your working directory.
 
-
+library(reshape2)
 
 merge <- function() {
+        
         DTtestX <- read.table("UCI HAR Dataset/test/X_test.txt")
         DTtrainX <- read.table("UCI HAR Dataset/train/X_train.txt")
         DTfeatures <- read.table("UCI HAR Dataset/features.txt")
@@ -22,6 +23,7 @@ merge <- function() {
         names(DTmergeX) <- DTfeatures[,2]
         DTnames <- grep("mean()([^F])|std()", names(DTmergeX), value=TRUE)
         DTselect <- subset(DTmergeX,select=DTnames)
+        
         
         DTmergeXY <- cbind(DTmergeY, DTselect)
         DTmergeXYSub <- cbind(DTmergeSub, DTmergeXY)
@@ -45,7 +47,18 @@ merge <- function() {
         names(DTmergeXYSub) <- gsub("Acc","Acceleration", names(DTmergeXYSub))
         names(DTmergeXYSub) <- gsub("mean","MeanValue", names(DTmergeXYSub))
         
+            
+        return(DTmergeXYSub)
         
-        return(names(DTmergeXYSub))
+       
+}
+
+tidy <- function() {
+        data <- merge()
+        DTmelt <- melt(data, id.vars=c("Subject","Activity"))
+        DTcast <- dcast(DTmelt, Subject + Activity ~ variable, mean)
         
+        write.table(DTcast, "DTtidy.txt", sep="\t")
+        
+        return(head(DTcast,20))
 }
