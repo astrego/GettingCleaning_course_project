@@ -1,9 +1,4 @@
 
-# function merge, reads in the data from the UCI HAR Dataset folder. For this function to work, 
-# you need to put the unzipped original folder from 
-# "https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip"
-# in your working directory.
-
 library(reshape2)
 
 merge <- function() {
@@ -58,7 +53,7 @@ tidy <- function() {
         DTmelt <- melt(data, id.vars=c("Subject","Activity"))
         DTcast <- dcast(DTmelt, Subject + Activity ~ variable, mean)
         
-        write.table(DTcast, "DTtidy.txt", sep="\t")
+        write.table(DTcast, "DTtidy.txt", sep="\t", row.name=FALSE)
         
         return(head(DTcast,20))
 }
