@@ -67,7 +67,7 @@ merge <- function() {
         names(DTmergeXYSub) <- gsub("-","", names(DTmergeXYSub))
         names(DTmergeXYSub) <- gsub("std","StandardDeviation", names(DTmergeXYSub))
         names(DTmergeXYSub) <- gsub("fBody","FrequencyBody", names(DTmergeXYSub))
-        names(DTmergeXYSub) <- gsub("tBody","TriaxialBody", names(DTmergeXYSub))
+        names(DTmergeXYSub) <- gsub("tBody","TimeBody", names(DTmergeXYSub))
         names(DTmergeXYSub) <- gsub("Mag","Magnitude", names(DTmergeXYSub))
         names(DTmergeXYSub) <- gsub("Gyro","Gyroscope", names(DTmergeXYSub))
         names(DTmergeXYSub) <- gsub("Acc","Acceleration", names(DTmergeXYSub))
